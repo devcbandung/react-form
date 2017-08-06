@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { dispatchAsync } from './async-dispatcher';
-import { checkAuthState } from './actions/auth';
 import store from './services/store';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
@@ -17,4 +15,4 @@ ReactDOM.render(
     document.getElementById('root')
 );
 registerServiceWorker();
-dispatchAsync(checkAuthState());
+
