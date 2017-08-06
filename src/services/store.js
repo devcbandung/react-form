@@ -1,5 +1,5 @@
-import { combineReducers, compose, createStore } from 'redux';
-import { reactReduxFirebase, firebaseStateReducer } from 'react-redux-firebase';
+import { compose, createStore } from 'redux';
+import { reactReduxFirebase } from 'react-redux-firebase';
 
 import reducers from '../reducers';
 

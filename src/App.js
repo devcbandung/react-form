@@ -45,7 +45,7 @@ class App extends Component {
                             <span>We need to identify you. <button onClick={() => this.login()}>Login</button></span>
                         ) : (
                             <div>
-                                <img src={auth.photoURL} />
+                                <img src={auth.photoURL} alt={"User Profile"} />
                                 Welcome <a href={`https://facebook.com/${auth.providerData[0].uid}`} target="_blank">{auth.displayName}</a>!
                                 <pre>{JSON.stringify(auth, null, 4)}</pre>
                             </div>
